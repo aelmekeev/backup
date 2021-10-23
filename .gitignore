@@ -1,0 +1,6 @@
+*.*
+
+!README.md
+!.gitignore
+!backup.sh
+!restore.sh
