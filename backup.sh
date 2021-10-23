@@ -8,7 +8,9 @@ function backup() {
   )
 }
 
-if [ -f apps.conf ]; then
+if [ ! -z "$1" ]; then
+  backup $1
+elif [ -f apps.conf ]; then
   while read -r app_dir; do
     backup $app_dir
   done <"apps.conf"

@@ -7,7 +7,9 @@ function restore() {
   )
 }
 
-if [ -f apps.conf ]; then
+if [ ! -z "$1" ]; then
+  restore $1
+elif [ -f apps.conf ]; then
   while read -r app_dir; do
     restore $app_dir
   done <"apps.conf"
