@@ -17,11 +17,13 @@ This repository contains scripts for hassle-free backup and restore of your envi
 
 ### How to create your own backup
 
-1. Create your private repository using this one as a template.
+1. Create your repository using this one as a template.
 2. Remove `.gitignore` from your repository.
 3. Create `apps.conf` in the root of the repository with the list of apps you would like to backup.
 4. Run `backup.sh`.
 5. Commit your first backup!
+
+Here is an example of what you would get in the result: https://github.com/aelmekeev/backup.
 
 Example of the `apps.conf` file:
 
@@ -29,6 +31,7 @@ Example of the `apps.conf` file:
 brew
 git
 zsh
+
 ```
 
 ### How to restore from the backup
@@ -37,9 +40,17 @@ Simply run `restore.sh`.
 
 ### How to keep my repository up to date with the template
 
-For this you can add template repository to the list of remotes by running `git remote add upstream git@github.com:aelmekeev/backup-and-restore.git`.
+For this you can add template repository to the list of remotes by running:
 
-Once you have this you can anytime merge the latest updates for the scripts including scrips for new apps with `git merge upstream/main`.
+``` 
+git remote add upstream git@github.com:aelmekeev/backup-and-restore.git
+```
+
+Once you have this you can anytime merge the latest updates for the scripts including scrips for new apps with:
+
+```
+git merge upstream/main
+```
 
 ## Contribution
 
