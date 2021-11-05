@@ -49,6 +49,7 @@ git remote add upstream git@github.com:aelmekeev/backup-and-restore.git
 Once you have this you can anytime merge the latest updates for the scripts including scrips for new apps with:
 
 ```
+git fetch upstream
 git merge upstream/main
 ```
 
