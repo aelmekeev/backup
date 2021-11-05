@@ -1,0 +1,9 @@
+*
+!*/
+
+!/.gitignore
+!README.md
+!CONTRIBUTING.md
+!LICENSE
+!backup.sh
+!restore.sh
